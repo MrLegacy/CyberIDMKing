@@ -1,0 +1,10 @@
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\bin\Release\CyberIDMKing.exe.config
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\bin\Release\CyberIDMKing.exe
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\bin\Release\CyberIDMKing.pdb
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Release\CyberIDMKing.csproj.AssemblyReference.cache
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Release\CyberIDMKing.Form1.resources
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Release\CyberIDMKing.Properties.Resources.resources
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Release\CyberIDMKing.csproj.GenerateResource.cache
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Release\CyberIDMKing.csproj.CoreCompileInputs.cache
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Release\CyberIDMKing.exe
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Release\CyberIDMKing.pdb

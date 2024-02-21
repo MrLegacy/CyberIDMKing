@@ -1,0 +1,15 @@
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\bin\Debug\CyberIDMKing.exe.config
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\bin\Debug\CyberIDMKing.exe
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\bin\Debug\CyberIDMKing.pdb
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Debug\CyberIDMKing.csproj.AssemblyReference.cache
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Debug\CyberIDMKing.Properties.Resources.resources
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Debug\CyberIDMKing.csproj.GenerateResource.cache
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Debug\CyberIDMKing.csproj.CoreCompileInputs.cache
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Debug\CyberIDMKing.exe
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Debug\CyberIDMKing.pdb
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\bin\Debug\SetACLx32.exe
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\bin\Debug\SetACLx64.exe
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\bin\Debug\idm_reg.reg
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\bin\Debug\idm_reset.reg
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\bin\Debug\idm_trial.reg
+D:\repos\NLP\CyberIDMKing\CyberIDMKing\obj\Debug\CyberIDMKing.FrmMain.resources

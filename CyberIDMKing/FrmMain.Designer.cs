@@ -35,13 +35,16 @@
             this.tmrWindow = new System.Windows.Forms.Timer(this.components);
             this.nIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.chbAutoResetTrial = new System.Windows.Forms.CheckBox();
             this.picLoading = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.chbAutoResetTrial = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.nIconContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLoading)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.nIconContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReset
@@ -72,9 +75,12 @@
             // 
             // nIcon
             // 
+            this.nIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.nIcon.BalloonTipText = "Working here...";
             this.nIcon.BalloonTipTitle = "CyberIDMKing";
+            this.nIcon.ContextMenuStrip = this.nIconContextMenu;
             this.nIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("nIcon.Icon")));
+            this.nIcon.Text = "CyberIDMKing";
             this.nIcon.Visible = true;
             this.nIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nIcon_MouseClick);
             // 
@@ -91,17 +97,6 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Internet download manager";
-            // 
-            // chbAutoResetTrial
-            // 
-            this.chbAutoResetTrial.AutoSize = true;
-            this.chbAutoResetTrial.Location = new System.Drawing.Point(23, 129);
-            this.chbAutoResetTrial.Name = "chbAutoResetTrial";
-            this.chbAutoResetTrial.Size = new System.Drawing.Size(125, 21);
-            this.chbAutoResetTrial.TabIndex = 2;
-            this.chbAutoResetTrial.Text = "Auto Reset Trial";
-            this.chbAutoResetTrial.UseVisualStyleBackColor = true;
-            this.chbAutoResetTrial.CheckedChanged += new System.EventHandler(this.chbAutoResetTrial_CheckedChanged);
             // 
             // picLoading
             // 
@@ -124,6 +119,17 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // chbAutoResetTrial
+            // 
+            this.chbAutoResetTrial.AutoSize = true;
+            this.chbAutoResetTrial.Location = new System.Drawing.Point(23, 129);
+            this.chbAutoResetTrial.Name = "chbAutoResetTrial";
+            this.chbAutoResetTrial.Size = new System.Drawing.Size(125, 21);
+            this.chbAutoResetTrial.TabIndex = 2;
+            this.chbAutoResetTrial.Text = "Auto Reset Trial";
+            this.chbAutoResetTrial.UseVisualStyleBackColor = true;
+            this.chbAutoResetTrial.CheckedChanged += new System.EventHandler(this.chbAutoResetTrial_CheckedChanged);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -132,6 +138,21 @@
             this.label1.Size = new System.Drawing.Size(167, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Akram A. AL-Shamiri 2024";
+            // 
+            // nIconContextMenu
+            // 
+            this.nIconContextMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.nIconContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuExit});
+            this.nIconContextMenu.Name = "nIconContextMenu";
+            this.nIconContextMenu.Size = new System.Drawing.Size(103, 28);
+            // 
+            // mnuExit
+            // 
+            this.mnuExit.Name = "mnuExit";
+            this.mnuExit.Size = new System.Drawing.Size(102, 24);
+            this.mnuExit.Text = "E&xit";
+            this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
             // 
             // FrmMain
             // 
@@ -146,11 +167,11 @@
             this.Name = "FrmMain";
             this.Text = "CyberIDMKing v1.0";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
-            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLoading)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.nIconContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,6 +188,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picLoading;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip nIconContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem mnuExit;
     }
 }
 

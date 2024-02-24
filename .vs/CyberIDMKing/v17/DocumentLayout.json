@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\repos\\NLP\\CyberIDMKing\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{07125E4A-42AE-4062-B665-01C7EFAE3334}|CyberIDMKing\\CyberIDMKing.csproj|D:\\repos\\NLP\\CyberIDMKing\\cyberidmking\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07125E4A-42AE-4062-B665-01C7EFAE3334}|CyberIDMKing\\CyberIDMKing.csproj|solutionrelative:cyberidmking\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{07125E4A-42AE-4062-B665-01C7EFAE3334}|CyberIDMKing\\CyberIDMKing.csproj|d:\\repos\\nlp\\cyberidmking\\cyberidmking\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{07125E4A-42AE-4062-B665-01C7EFAE3334}|CyberIDMKing\\CyberIDMKing.csproj|solutionrelative:cyberidmking\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07125E4A-42AE-4062-B665-01C7EFAE3334}|CyberIDMKing\\CyberIDMKing.csproj|d:\\repos\\nlp\\cyberidmking\\cyberidmking\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07125E4A-42AE-4062-B665-01C7EFAE3334}|CyberIDMKing\\CyberIDMKing.csproj|solutionrelative:cyberidmking\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07125E4A-42AE-4062-B665-01C7EFAE3334}|CyberIDMKing\\CyberIDMKing.csproj|D:\\repos\\NLP\\CyberIDMKing\\cyberidmking\\windowmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07125E4A-42AE-4062-B665-01C7EFAE3334}|CyberIDMKing\\CyberIDMKing.csproj|solutionrelative:cyberidmking\\windowmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07125E4A-42AE-4062-B665-01C7EFAE3334}|CyberIDMKing\\CyberIDMKing.csproj|D:\\repos\\NLP\\CyberIDMKing\\cyberidmking\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,24 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "WindowManager.cs",
+              "DocumentMoniker": "D:\\repos\\NLP\\CyberIDMKing\\CyberIDMKing\\WindowManager.cs",
+              "RelativeDocumentMoniker": "CyberIDMKing\\WindowManager.cs",
+              "ToolTip": "D:\\repos\\NLP\\CyberIDMKing\\CyberIDMKing\\WindowManager.cs",
+              "RelativeToolTip": "CyberIDMKing\\WindowManager.cs",
+              "ViewState": "AQIAALYAAAAAAAAAAAAUwMcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T12:29:04.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FrmMain.cs",
               "DocumentMoniker": "D:\\repos\\NLP\\CyberIDMKing\\CyberIDMKing\\FrmMain.cs",
               "RelativeDocumentMoniker": "CyberIDMKing\\FrmMain.cs",
               "ToolTip": "D:\\repos\\NLP\\CyberIDMKing\\CyberIDMKing\\FrmMain.cs",
               "RelativeToolTip": "CyberIDMKing\\FrmMain.cs",
-              "ViewState": "AQIAAFEBAAAAAAAAAAAiwF8BAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOIBAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T19:53:33.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Core.cs",
               "DocumentMoniker": "D:\\repos\\NLP\\CyberIDMKing\\CyberIDMKing\\Core.cs",
               "RelativeDocumentMoniker": "CyberIDMKing\\Core.cs",
@@ -47,12 +64,11 @@
               "RelativeToolTip": "CyberIDMKing\\Core.cs",
               "ViewState": "AQIAAKIAAAAAAAAAAAAAAKEAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T21:31:58.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-19T21:31:58.666Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FrmMain.cs [Design]",
               "DocumentMoniker": "D:\\repos\\NLP\\CyberIDMKing\\CyberIDMKing\\FrmMain.cs",
               "RelativeDocumentMoniker": "CyberIDMKing\\FrmMain.cs",

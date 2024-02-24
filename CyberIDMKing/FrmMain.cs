@@ -1,5 +1,8 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Diagnostics;
+using System.Linq;
+using System.Reflection;
 using System.Security.AccessControl;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -353,15 +356,62 @@ namespace CyberIDMKing
         }
 
 
-        private readonly string[] _noisyWindowsTitles=new string[]{ 
+        private static readonly string[] _noisyWindowsTitles = new string[]{
             "Internet Download Managerتتوفر نسخة جديدة من",
             "New version of Internet Download Manager is available",
             "Internet Download Manager Registration",
             "Internet Download Manager تسجيل",
         };
+        private static readonly string[] _noisy_captions = new string[] { "fake Serial Number","تسجيل نسختك","مزيف","register now" };
+        private static readonly string[] _ambiguous_titles = new string[] { "Internet Download Manager" };
+
+        public static void CloseNoisyIDMWindows()
+        {
+            var pid = ProccessManager.GetIDMProccess().Id;
+            foreach (var window in WindowManager.EnumerateProcessWindowHandles(pid))
+            {
+                var title = WindowManager.GetWindowTitle(window);
+                var className = WindowManager.GetClassName(window);
+
+                if (className == WindowManager.Dialog_Class)
+                {
+                    if (_noisyWindowsTitles.Contains(title))
+                    {
+                        WindowManager.BringAndClose(window, pid);
+                    }
+                    else 
+                    {
+                        foreach(var aTitle in _ambiguous_titles) {
+                            if (title.Contains(aTitle))
+                            {
+                                var handles = WindowManager.GetAllChildHandles(window);
+                                foreach (var h in handles)
+                                {
+                                    var childTitle = WindowManager.GetWindowTitle(h);
+
+                                    foreach (var nTitle in _noisy_captions)
+                                    {
+                                        if (childTitle.Contains(nTitle))
+                                        {
+                                            WindowManager.BringAndClose(window, pid);
+                                        }
+                                    }
+                                    //var childClassName = WindowManager.GetClassName(h);
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+
+        }
 
         private async void tmrWindow_Tick(object sender, EventArgs e)
         {
+            tmrWindow.Enabled = false;
             //Auto Reset Trial
             try
             {
@@ -378,50 +428,45 @@ namespace CyberIDMKing
             //Auto Close Noisy Windows
             try
             {
-                tmrWindow.Enabled = false;
+                
+                CloseNoisyIDMWindows();
+                /*var pid = ProccessManager.GetIDMProccess().Id;
                 foreach (var title in _noisyWindowsTitles)
                 {
-                    var handle = WindowManager.FindWindowByTitle(title);
-                    if (handle != IntPtr.Zero)
-                    {
-                        if (WindowManager.BringWindowToForeground(handle))
-                        {
-                            SendKeys.Send("{ESC}");
-                            if (WindowManager.CloseWindowByHandle(handle))
-                            {
-                                //send esc to the window
-
-                            }
-                        }
-                    }
+                    //Unique titles
+                    var h1 = WindowManager.FindWindowByTitle(title, WindowManager.Dialog_Class);
+                    WindowManager.BringAndClose(h1,pid);
+                    
                 }
+                //ambiguous titles
+                var h2 = WindowManager.FindWindow("Internet Download Manager", "fake Serial Number", WindowManager.Dialog_Class,pid);
+                WindowManager.BringAndClose(h2,pid);*/
             }
             catch
             {
 
             }
-            finally
-            {
-                tmrWindow.Enabled = true;
-            }
+            tmrWindow.Enabled = true;
         }
 
         private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
-            this.nIcon.ShowBalloonTip(3000);
-            this.Hide();
+            nIcon.ShowBalloonTip(3000);
+            Hide();
         }
 
         private void nIcon_MouseClick(object sender, MouseEventArgs e)
         {
-            if(this.Visible)
+            if (e.Button != MouseButtons.Left)
+                return;
+            if(Visible)
             {
-                this.Hide();
+                Hide();
             }
             else
             {
-                this.Show();
+                Show();
             }
             
         }
@@ -431,9 +476,9 @@ namespace CyberIDMKing
             Core.SetAutoResetTrial(chbAutoResetTrial.Checked);
         }
 
-        private void FrmMain_Load(object sender, EventArgs e)
+        private void mnuExit_Click(object sender, EventArgs e)
         {
-            
+            Environment.Exit(0);
         }
     }
 }
